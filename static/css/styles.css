@@ -1,0 +1,46 @@
+:root {
+  /* Base Colors (Осветлённые) */
+  --color-bg-primary: #1A1A1A;    /* Базовый фон */
+  --color-surface: hsl(0, 0%, 15%);       /* Панели, сайдбар, хедер */
+  --color-widget: #333333;        /* Карточки тикетов, поля ввода */
+  --color-widget-hover: #3D3D3D;  /* Ховер для карточек */
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #CCCCCC;
+  --color-text-tertiary: #969696;
+
+  /* Accent Colors */
+  --color-accent-info: #4A8BFA;
+  --color-accent-warning: #FFC53D;
+  --color-accent-success: #39DA8A;
+  --color-accent-error: #FF5C5C;
+  --color-accent-neutral: #AB7DF8;
+}
+
+/*      main code       */
+body{
+    background-color: var(--color-bg-primary);
+}
+
+.panel_tools{
+    border: 1px solid var(--color-bg-primary);
+    background-color: var(--color-surface);
+    /* background-color: white; */
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 50px;
+}
+
+/* ----------   TOP BAR    ---------- */
+#logo{
+    position: static;
+    width: 2%;
+    height: 2%;
+    margin-left: 2em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border: solid white 1px;
+    border-radius: 100%;
+    padding: 6px;
+}
