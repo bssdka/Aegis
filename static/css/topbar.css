@@ -44,14 +44,13 @@
   to {text-shadow: 0px 0px 35px cornflowerblue;}
 }
 
-/* Контейнер поиска */
 .search-container {
-  position: relative;
+  position: fixed;
   flex: 0 1 450px;
   margin: 0 2rem;
+  margin-left: 30em;
 }
 
-/* Основная строка поиска */
 .search-box {
   position: relative;
   display: flex;
@@ -75,7 +74,6 @@
   transform: translateY(-1px);
 }
 
-/* Иконка поиска */
 .search-icon {
   color: var(--color-text-tertiary);
   margin-right: 0.75rem;
@@ -87,7 +85,6 @@
   color: var(--color-accent-info);
 }
 
-/* Поле ввода */
 .search-input {
   flex: 1;
   background: transparent;
@@ -96,7 +93,8 @@
   font-size: 0.95rem;
   padding: 0.5rem 0;
   outline: none;
-  caret-color: var(--color-accent-info); /* Цвет курсора */
+  caret-color: var(--color-accent-info);
+  width: 20em;
 }
 
 .search-input::placeholder {
@@ -108,43 +106,9 @@
   opacity: 0.5;
 }
 
-/* Горячая клавиша */
-.search-shortcut {
-  background: var(--search-shortcut-bg);
-  color: var(--search-shortcut-text);
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  margin-left: 0.75rem;
-  border: 1px solid var(--search-border);
-  transition: all 0.2s ease;
-}
-
 .search-box:focus-within .search-shortcut {
   opacity: 0;
   transform: scale(0.95);
-}
-
-/* Выпадающие результаты поиска */
-.search-results {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: var(--search-results-bg);
-  border-radius: 0 0 12px 12px;
-  border: 1.5px solid var(--search-border-focus);
-  border-top: none;
-  margin-top: -4px;
-  max-height: 300px;
-  overflow-y: auto;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
 .search-box:focus-within + .search-results {
