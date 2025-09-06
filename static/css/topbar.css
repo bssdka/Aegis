@@ -181,7 +181,7 @@
   color: var(--color-text-tertiary);
   font-size: 0.8rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2;  */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
