@@ -31,3 +31,7 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 async def read_index():
     html_path = os.path.join(static_dir, "index.html")
     return FileResponse(html_path)
+
+@app.get("/unknown")
+async def profile():
+    return FileResponse(os.path.join(static_dir, "stub.html"))

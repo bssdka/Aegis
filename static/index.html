@@ -1,45 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
 
-        <meta charset="UTF-8">
-        <title>Aegis System</title>
-        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-        <link rel="stylesheet" type="text/css" href="static/css/topbar.css">
+        <style>
+            body{
+                background-color: grey;
+            }
+        </style>
 
     </head>
-    <body data-theme="dark">
-        <!-- TOP BAR -->
-        <header>
-            <div class="panel_tools">
-
-                <!-- LOGO -->
-                <a href="/" style="text-decoration: none;"><h2 class="logo">Aegis System</h2></a>
-                <!-- SEARCH BOX -->
-                <search class="search-container">
-                    <div class="search-box">
-                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" 
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <input type="text" class="search-input" placeholder="Поиск тикетов, задач или описаний..." 
-                                aria-label="Поиск тикетов">
-                        <div class="search-results" id="searchResults">
-                            <!-- Результаты поиска будут появляться здесь динамически -->
-                        </div>
-                    </div>
-                </search>
-                <!-- <nav></nav> -->
-                 
-
-            </div>
-        </header>
-
-
-
-
-
+    <body>
         
+        <form action="/unknown"><button>search ticket</button></form>
+
     </body>
-    <script src="static/js/script.js"></script>
 </html>
